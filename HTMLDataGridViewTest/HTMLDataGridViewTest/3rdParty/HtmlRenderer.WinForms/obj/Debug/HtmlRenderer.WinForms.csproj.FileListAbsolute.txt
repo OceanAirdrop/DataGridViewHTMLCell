@@ -1,0 +1,7 @@
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer.WinForms\bin\DebugNet20\HtmlRenderer.WinForms.dll
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer.WinForms\bin\DebugNet20\HtmlRenderer.WinForms.pdb
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer.WinForms\bin\DebugNet20\HtmlRenderer.dll
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer.WinForms\bin\DebugNet20\HtmlRenderer.pdb
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer.WinForms\obj\Debug\HtmlRenderer.WinForms.csprojResolveAssemblyReference.cache
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer.WinForms\obj\Debug\HtmlRenderer.WinForms.dll
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer.WinForms\obj\Debug\HtmlRenderer.WinForms.pdb

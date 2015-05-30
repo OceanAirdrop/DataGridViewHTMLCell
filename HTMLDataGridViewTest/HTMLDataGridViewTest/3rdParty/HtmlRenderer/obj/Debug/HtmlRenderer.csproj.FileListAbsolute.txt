@@ -1,0 +1,4 @@
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer\bin\Debug\HtmlRenderer.dll
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer\bin\Debug\HtmlRenderer.pdb
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer\obj\Debug\HtmlRenderer.dll
+C:\AdeStuff\VisualStudioProjects\HTMLDataGridViewTest\HTMLDataGridViewTest\3rdParty\HtmlRenderer\obj\Debug\HtmlRenderer.pdb
