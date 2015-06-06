@@ -57,6 +57,9 @@
     <Compile Include="DataGridViewColumns\DataGridViewHTMLColumn.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DataGridViewColumns\DataGridViewHTMLColumnScrollbars.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -36,3 +36,16 @@ C:\AdeStuff\Github\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTes
 C:\AdeStuff\Github\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\bin\Debug\HtmlRenderer.WinForms.dll
 C:\AdeStuff\Github\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\bin\Debug\HtmlRenderer.pdb
 C:\AdeStuff\Github\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\bin\Debug\HtmlRenderer.WinForms.pdb
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\bin\Debug\HTMLDataGridViewTest.exe.config
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\obj\Debug\HTMLDataGridViewTest.exe
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\obj\Debug\HTMLDataGridViewTest.pdb
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\obj\Debug\HTMLDataGridViewTest.csprojResolveAssemblyReference.cache
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\obj\Debug\HTMLDataGridViewTest.Form1.resources
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\obj\Debug\HTMLDataGridViewTest.Properties.Resources.resources
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\obj\Debug\HTMLDataGridViewTest.csproj.GenerateResource.Cache
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\bin\Debug\HTMLDataGridViewTest.exe
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\bin\Debug\HTMLDataGridViewTest.pdb
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\bin\Debug\HtmlRenderer.dll
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\bin\Debug\HtmlRenderer.WinForms.dll
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\bin\Debug\HtmlRenderer.pdb
+C:\AdeStuff\Github\mygithub\DataGridViewHTMLCell\HTMLDataGridViewTest\HTMLDataGridViewTest\bin\Debug\HtmlRenderer.WinForms.pdb

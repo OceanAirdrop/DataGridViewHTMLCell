@@ -38,11 +38,12 @@
             this.buttonSampleHTML3 = new System.Windows.Forms.Button();
             this.buttonSampleHTML4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButtonOverFlowNone = new System.Windows.Forms.RadioButton();
-            this.radioButtonOverFlowEllipsis = new System.Windows.Forms.RadioButton();
             this.radioButtonOverFlowRedTriangle = new System.Windows.Forms.RadioButton();
+            this.radioButtonOverFlowEllipsis = new System.Windows.Forms.RadioButton();
+            this.radioButtonOverFlowNone = new System.Windows.Forms.RadioButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new DataGridViewHTML.DataGridViewHTMLColumn();
+            this.HTMLScrollbars = new DataGridViewHTML.DataGridViewHTMLColumnScrollBars();
             this.ColumnX = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,6 +67,7 @@
             // 
             // buttonSampleHTML1
             // 
+            this.buttonSampleHTML1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSampleHTML1.Location = new System.Drawing.Point(12, 408);
             this.buttonSampleHTML1.Name = "buttonSampleHTML1";
             this.buttonSampleHTML1.Size = new System.Drawing.Size(75, 37);
@@ -100,6 +102,7 @@
             // 
             // buttonSampleHTML2
             // 
+            this.buttonSampleHTML2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSampleHTML2.Location = new System.Drawing.Point(93, 408);
             this.buttonSampleHTML2.Name = "buttonSampleHTML2";
             this.buttonSampleHTML2.Size = new System.Drawing.Size(75, 37);
@@ -110,6 +113,7 @@
             // 
             // buttonSampleHTML3
             // 
+            this.buttonSampleHTML3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSampleHTML3.Location = new System.Drawing.Point(174, 408);
             this.buttonSampleHTML3.Name = "buttonSampleHTML3";
             this.buttonSampleHTML3.Size = new System.Drawing.Size(75, 37);
@@ -120,6 +124,7 @@
             // 
             // buttonSampleHTML4
             // 
+            this.buttonSampleHTML4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonSampleHTML4.Location = new System.Drawing.Point(255, 408);
             this.buttonSampleHTML4.Name = "buttonSampleHTML4";
             this.buttonSampleHTML4.Size = new System.Drawing.Size(75, 35);
@@ -140,17 +145,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "HTML OverFlow Indicator";
             // 
-            // radioButtonOverFlowNone
+            // radioButtonOverFlowRedTriangle
             // 
-            this.radioButtonOverFlowNone.AutoSize = true;
-            this.radioButtonOverFlowNone.Location = new System.Drawing.Point(40, 20);
-            this.radioButtonOverFlowNone.Name = "radioButtonOverFlowNone";
-            this.radioButtonOverFlowNone.Size = new System.Drawing.Size(51, 17);
-            this.radioButtonOverFlowNone.TabIndex = 0;
-            this.radioButtonOverFlowNone.TabStop = true;
-            this.radioButtonOverFlowNone.Text = "None";
-            this.radioButtonOverFlowNone.UseVisualStyleBackColor = true;
-            this.radioButtonOverFlowNone.CheckedChanged += new System.EventHandler(this.radioButtonOverFlowNone_CheckedChanged);
+            this.radioButtonOverFlowRedTriangle.AutoSize = true;
+            this.radioButtonOverFlowRedTriangle.Location = new System.Drawing.Point(40, 66);
+            this.radioButtonOverFlowRedTriangle.Name = "radioButtonOverFlowRedTriangle";
+            this.radioButtonOverFlowRedTriangle.Size = new System.Drawing.Size(86, 17);
+            this.radioButtonOverFlowRedTriangle.TabIndex = 2;
+            this.radioButtonOverFlowRedTriangle.TabStop = true;
+            this.radioButtonOverFlowRedTriangle.Text = "Red Triangle";
+            this.radioButtonOverFlowRedTriangle.UseVisualStyleBackColor = true;
+            this.radioButtonOverFlowRedTriangle.CheckedChanged += new System.EventHandler(this.radioButtonOverFlowRedTriangle_CheckedChanged);
             // 
             // radioButtonOverFlowEllipsis
             // 
@@ -164,17 +169,17 @@
             this.radioButtonOverFlowEllipsis.UseVisualStyleBackColor = true;
             this.radioButtonOverFlowEllipsis.CheckedChanged += new System.EventHandler(this.radioButtonOverFlowEllipsis_CheckedChanged);
             // 
-            // radioButtonOverFlowRedTriangle
+            // radioButtonOverFlowNone
             // 
-            this.radioButtonOverFlowRedTriangle.AutoSize = true;
-            this.radioButtonOverFlowRedTriangle.Location = new System.Drawing.Point(40, 66);
-            this.radioButtonOverFlowRedTriangle.Name = "radioButtonOverFlowRedTriangle";
-            this.radioButtonOverFlowRedTriangle.Size = new System.Drawing.Size(86, 17);
-            this.radioButtonOverFlowRedTriangle.TabIndex = 2;
-            this.radioButtonOverFlowRedTriangle.TabStop = true;
-            this.radioButtonOverFlowRedTriangle.Text = "Red Triangle";
-            this.radioButtonOverFlowRedTriangle.UseVisualStyleBackColor = true;
-            this.radioButtonOverFlowRedTriangle.CheckedChanged += new System.EventHandler(this.radioButtonOverFlowRedTriangle_CheckedChanged);
+            this.radioButtonOverFlowNone.AutoSize = true;
+            this.radioButtonOverFlowNone.Location = new System.Drawing.Point(40, 20);
+            this.radioButtonOverFlowNone.Name = "radioButtonOverFlowNone";
+            this.radioButtonOverFlowNone.Size = new System.Drawing.Size(51, 17);
+            this.radioButtonOverFlowNone.TabIndex = 0;
+            this.radioButtonOverFlowNone.TabStop = true;
+            this.radioButtonOverFlowNone.Text = "None";
+            this.radioButtonOverFlowNone.UseVisualStyleBackColor = true;
+            this.radioButtonOverFlowNone.CheckedChanged += new System.EventHandler(this.radioButtonOverFlowNone_CheckedChanged);
             // 
             // dataGridView1
             // 
@@ -184,6 +189,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
+            this.HTMLScrollbars,
             this.ColumnX});
             this.dataGridView1.Location = new System.Drawing.Point(12, 117);
             this.dataGridView1.Name = "dataGridView1";
@@ -194,6 +200,11 @@
             // 
             this.Column1.HeaderText = "HTML Text";
             this.Column1.Name = "Column1";
+            // 
+            // HTMLScrollbars
+            // 
+            this.HTMLScrollbars.HeaderText = "HTML Scrollbars";
+            this.HTMLScrollbars.Name = "HTMLScrollbars";
             // 
             // ColumnX
             // 
@@ -233,8 +244,6 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.Button buttonSampleHTML1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private DataGridViewHTML.DataGridViewHTMLColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnX;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonSampleHTML2;
@@ -244,6 +253,9 @@
         private System.Windows.Forms.RadioButton radioButtonOverFlowRedTriangle;
         private System.Windows.Forms.RadioButton radioButtonOverFlowEllipsis;
         private System.Windows.Forms.RadioButton radioButtonOverFlowNone;
+        private DataGridViewHTML.DataGridViewHTMLColumn Column1;
+        private DataGridViewHTML.DataGridViewHTMLColumnScrollBars HTMLScrollbars;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnX;
     }
 }
 

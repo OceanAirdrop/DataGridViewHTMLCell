@@ -46,7 +46,7 @@ namespace HTMLDataGridViewTest
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
             }
 
         }
@@ -156,13 +156,14 @@ namespace HTMLDataGridViewTest
             int nColCount = 0;
             dataGridView1.Rows[nNewRow].Cells[nColCount++].Value = html.ToString();
             dataGridView1.Rows[nNewRow].Cells[nColCount++].Value = html.ToString();
+            dataGridView1.Rows[nNewRow].Cells[nColCount++].Value = html.ToString();
         }
 
         private void buttonSampleHTML1_Click(object sender, EventArgs e)
         {
             StringBuilder html = new StringBuilder();
 
-            string str = "<img src=\"data:image/gif;base64,R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==\"alt=\"Base64 encoded image\"/>";
+            //string str = "<img src=\"data:image/gif;base64,R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==\"alt=\"Base64 encoded image\"/>";
 
             Bitmap image = Resources.apple;
             string base64String = ImageToBase64(image, System.Drawing.Imaging.ImageFormat.Png);
