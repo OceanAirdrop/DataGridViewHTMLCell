@@ -26,7 +26,6 @@ namespace HTMLDataGridViewTest
         {
             try
             {
-		// test!
                 radioButtonOverFlowEllipsis.Checked = true;
 
                 SetupDataGridView(ref dataGridView1);
@@ -40,7 +39,7 @@ namespace HTMLDataGridViewTest
                 htmlPanel.Text = "This is an <b>HtmlLabel</b> on transparent background with <span style=\"color: red\">colors</span> and links: HTML Renderer";
                 htmlPanel.Dock = DockStyle.Fill;
 
-                string hahah = htmlPanel.GetHtml();
+                string tmp = htmlPanel.GetHtml();
 
                 panel4.Controls.Add(htmlPanel);
             }
@@ -206,7 +205,7 @@ namespace HTMLDataGridViewTest
 
         private void buttonSampleHTML4_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
         }
 
         private void radioButtonOverFlowEllipsis_CheckedChanged(object sender, EventArgs e)
@@ -252,6 +251,21 @@ namespace HTMLDataGridViewTest
                     }
                 }
             }
+        }
+
+        private void radioButtonAutoSizeRowNone_CheckedChanged(object sender, EventArgs e)
+        {
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+        }
+
+        private void radioButtonAutoSizeRowAllCells_CheckedChanged(object sender, EventArgs e)
+        {
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+        }
+
+        private void radioButtonAutoSizeRowDisplayedCells_CheckedChanged(object sender, EventArgs e)
+        {
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCells;
         }
     }
 }

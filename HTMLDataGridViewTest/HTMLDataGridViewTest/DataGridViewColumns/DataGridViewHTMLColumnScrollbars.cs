@@ -234,6 +234,25 @@ namespace DataGridViewHTML
                     SetHTMLPanelText(ctl, Convert.ToString(initialFormattedValue));
             }
         }
+
+        protected override Size GetPreferredSize(Graphics graphics, DataGridViewCellStyle cellStyle, int rowIndex, Size constraintSize)
+        {
+            Console.WriteLine("GetPreferredSize: w:{0} h:{1}", constraintSize.Width, constraintSize.Height);
+
+            // constraintSize is the cell's maximum allowable size.
+            SizeF maxAllowableSize = new System.Drawing.SizeF(constraintSize.Width, constraintSize.Height);
+
+            // start at 0,0
+            PointF point = new PointF(0, 0); 
+
+            // send the html text to the renderer to find out its size
+            SizeF htmlSize = HtmlRender.Render(graphics, m_htmlText, point, maxAllowableSize);
+
+            // return the cells preffered size
+            return htmlSize.ToSize();
+
+            //return base.GetPreferredSize(graphics, cellStyle, rowIndex, constraintSize);
+        }
  
         protected override object GetFormattedValue(object value, int rowIndex, ref DataGridViewCellStyle cellStyle, TypeConverter valueTypeConverter, TypeConverter formattedValueTypeConverter, DataGridViewDataErrorContexts context)
         {

@@ -36,16 +36,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.buttonSampleHTML2 = new System.Windows.Forms.Button();
             this.buttonSampleHTML3 = new System.Windows.Forms.Button();
-            this.buttonSampleHTML4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButtonOverFlowRedTriangle = new System.Windows.Forms.RadioButton();
             this.radioButtonOverFlowEllipsis = new System.Windows.Forms.RadioButton();
             this.radioButtonOverFlowNone = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButtonAutoSizeRowDisplayedCells = new System.Windows.Forms.RadioButton();
+            this.radioButtonAutoSizeRowAllCells = new System.Windows.Forms.RadioButton();
+            this.radioButtonAutoSizeRowNone = new System.Windows.Forms.RadioButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new DataGridViewHTML.DataGridViewHTMLColumn();
             this.HTMLScrollbars = new DataGridViewHTML.DataGridViewHTMLColumnScrollBars();
             this.ColumnX = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +72,7 @@
             // buttonSampleHTML1
             // 
             this.buttonSampleHTML1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonSampleHTML1.Location = new System.Drawing.Point(12, 408);
+            this.buttonSampleHTML1.Location = new System.Drawing.Point(12, 452);
             this.buttonSampleHTML1.Name = "buttonSampleHTML1";
             this.buttonSampleHTML1.Size = new System.Drawing.Size(75, 37);
             this.buttonSampleHTML1.TabIndex = 9;
@@ -103,7 +107,7 @@
             // buttonSampleHTML2
             // 
             this.buttonSampleHTML2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonSampleHTML2.Location = new System.Drawing.Point(93, 408);
+            this.buttonSampleHTML2.Location = new System.Drawing.Point(93, 452);
             this.buttonSampleHTML2.Name = "buttonSampleHTML2";
             this.buttonSampleHTML2.Size = new System.Drawing.Size(75, 37);
             this.buttonSampleHTML2.TabIndex = 16;
@@ -114,24 +118,13 @@
             // buttonSampleHTML3
             // 
             this.buttonSampleHTML3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonSampleHTML3.Location = new System.Drawing.Point(174, 408);
+            this.buttonSampleHTML3.Location = new System.Drawing.Point(174, 452);
             this.buttonSampleHTML3.Name = "buttonSampleHTML3";
             this.buttonSampleHTML3.Size = new System.Drawing.Size(75, 37);
             this.buttonSampleHTML3.TabIndex = 17;
             this.buttonSampleHTML3.Text = "Sample HTML3";
             this.buttonSampleHTML3.UseVisualStyleBackColor = true;
             this.buttonSampleHTML3.Click += new System.EventHandler(this.buttonSampleHTML3_Click);
-            // 
-            // buttonSampleHTML4
-            // 
-            this.buttonSampleHTML4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonSampleHTML4.Location = new System.Drawing.Point(255, 408);
-            this.buttonSampleHTML4.Name = "buttonSampleHTML4";
-            this.buttonSampleHTML4.Size = new System.Drawing.Size(75, 35);
-            this.buttonSampleHTML4.TabIndex = 18;
-            this.buttonSampleHTML4.Text = "Sample HTML 4";
-            this.buttonSampleHTML4.UseVisualStyleBackColor = true;
-            this.buttonSampleHTML4.Click += new System.EventHandler(this.buttonSampleHTML4_Click);
             // 
             // groupBox1
             // 
@@ -181,6 +174,55 @@
             this.radioButtonOverFlowNone.UseVisualStyleBackColor = true;
             this.radioButtonOverFlowNone.CheckedChanged += new System.EventHandler(this.radioButtonOverFlowNone_CheckedChanged);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.radioButtonAutoSizeRowDisplayedCells);
+            this.groupBox2.Controls.Add(this.radioButtonAutoSizeRowAllCells);
+            this.groupBox2.Controls.Add(this.radioButtonAutoSizeRowNone);
+            this.groupBox2.Location = new System.Drawing.Point(368, 443);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(316, 46);
+            this.groupBox2.TabIndex = 28;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Auto Size Row Mode";
+            // 
+            // radioButtonAutoSizeRowDisplayedCells
+            // 
+            this.radioButtonAutoSizeRowDisplayedCells.AutoSize = true;
+            this.radioButtonAutoSizeRowDisplayedCells.Location = new System.Drawing.Point(159, 20);
+            this.radioButtonAutoSizeRowDisplayedCells.Name = "radioButtonAutoSizeRowDisplayedCells";
+            this.radioButtonAutoSizeRowDisplayedCells.Size = new System.Drawing.Size(93, 17);
+            this.radioButtonAutoSizeRowDisplayedCells.TabIndex = 2;
+            this.radioButtonAutoSizeRowDisplayedCells.TabStop = true;
+            this.radioButtonAutoSizeRowDisplayedCells.Text = "DisplayedCells";
+            this.radioButtonAutoSizeRowDisplayedCells.UseVisualStyleBackColor = true;
+            this.radioButtonAutoSizeRowDisplayedCells.CheckedChanged += new System.EventHandler(this.radioButtonAutoSizeRowDisplayedCells_CheckedChanged);
+            // 
+            // radioButtonAutoSizeRowAllCells
+            // 
+            this.radioButtonAutoSizeRowAllCells.AutoSize = true;
+            this.radioButtonAutoSizeRowAllCells.Location = new System.Drawing.Point(97, 20);
+            this.radioButtonAutoSizeRowAllCells.Name = "radioButtonAutoSizeRowAllCells";
+            this.radioButtonAutoSizeRowAllCells.Size = new System.Drawing.Size(58, 17);
+            this.radioButtonAutoSizeRowAllCells.TabIndex = 1;
+            this.radioButtonAutoSizeRowAllCells.TabStop = true;
+            this.radioButtonAutoSizeRowAllCells.Text = "AllCells";
+            this.radioButtonAutoSizeRowAllCells.UseVisualStyleBackColor = true;
+            this.radioButtonAutoSizeRowAllCells.CheckedChanged += new System.EventHandler(this.radioButtonAutoSizeRowAllCells_CheckedChanged);
+            // 
+            // radioButtonAutoSizeRowNone
+            // 
+            this.radioButtonAutoSizeRowNone.AutoSize = true;
+            this.radioButtonAutoSizeRowNone.Location = new System.Drawing.Point(40, 20);
+            this.radioButtonAutoSizeRowNone.Name = "radioButtonAutoSizeRowNone";
+            this.radioButtonAutoSizeRowNone.Size = new System.Drawing.Size(51, 17);
+            this.radioButtonAutoSizeRowNone.TabIndex = 0;
+            this.radioButtonAutoSizeRowNone.TabStop = true;
+            this.radioButtonAutoSizeRowNone.Text = "None";
+            this.radioButtonAutoSizeRowNone.UseVisualStyleBackColor = true;
+            this.radioButtonAutoSizeRowNone.CheckedChanged += new System.EventHandler(this.radioButtonAutoSizeRowNone_CheckedChanged);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -193,31 +235,34 @@
             this.ColumnX});
             this.dataGridView1.Location = new System.Drawing.Point(12, 117);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(653, 285);
+            this.dataGridView1.Size = new System.Drawing.Size(674, 307);
             this.dataGridView1.TabIndex = 10;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "HTML Text";
             this.Column1.Name = "Column1";
+            this.Column1.Width = 200;
             // 
             // HTMLScrollbars
             // 
             this.HTMLScrollbars.HeaderText = "HTML Scrollbars";
             this.HTMLScrollbars.Name = "HTMLScrollbars";
+            this.HTMLScrollbars.Width = 200;
             // 
             // ColumnX
             // 
             this.ColumnX.HeaderText = "Normal Text";
             this.ColumnX.Name = "ColumnX";
+            this.ColumnX.Width = 200;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 455);
+            this.ClientSize = new System.Drawing.Size(699, 499);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.buttonSampleHTML4);
             this.Controls.Add(this.buttonSampleHTML3);
             this.Controls.Add(this.buttonSampleHTML2);
             this.Controls.Add(this.label2);
@@ -231,6 +276,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -248,11 +295,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonSampleHTML2;
         private System.Windows.Forms.Button buttonSampleHTML3;
-        private System.Windows.Forms.Button buttonSampleHTML4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButtonOverFlowRedTriangle;
         private System.Windows.Forms.RadioButton radioButtonOverFlowEllipsis;
         private System.Windows.Forms.RadioButton radioButtonOverFlowNone;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioButtonAutoSizeRowDisplayedCells;
+        private System.Windows.Forms.RadioButton radioButtonAutoSizeRowAllCells;
+        private System.Windows.Forms.RadioButton radioButtonAutoSizeRowNone;
         private DataGridViewHTML.DataGridViewHTMLColumn Column1;
         private DataGridViewHTML.DataGridViewHTMLColumnScrollBars HTMLScrollbars;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnX;
